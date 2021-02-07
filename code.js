@@ -13,7 +13,7 @@ class Game {
 
     InitGame() {
         btnStart.classList.add('hide');
-        this.level = 5
+        this.level = 1
         this.colors = {
             green,
             purple,
@@ -27,7 +27,8 @@ class Game {
     }
 
     nextLevel() {
-        this.LigthSequence()
+        this.LigthSequence();
+        this.AddEventClick();
     }
 
     NumberToColor(number) {
@@ -57,6 +58,16 @@ class Game {
 
     OffColor(color) {
         this.colors[color].classList.remove('light')
+    }
+    AddEventClick(){
+        this.colors.green.addEventListener('click', this.chooseColor.bind(this))
+        this.colors.purple.addEventListener('click', this.chooseColor.bind(this))
+        this.colors.blue.addEventListener('click', this.chooseColor.bind(this))
+        this.colors.yellow.addEventListener('click', this.chooseColor.bind(this))
+    }
+
+    chooseColor(e){
+        console.log(e)
     }
 }
 
