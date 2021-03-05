@@ -42,6 +42,7 @@
 
 .green.light {
     background: #1abc9c;
+    transform: scale(1.03);
 }
 
 .purple {
@@ -50,6 +51,7 @@
 
 .purple.light {
     background: #9b59b6;
+    transform: scale(1.03);
 }
 
 .blue {
@@ -58,6 +60,7 @@
 
 .blue.light {
     background: #3498db;
+    transform: scale(1.03);
 }
 
 .yellow {
@@ -66,6 +69,7 @@
 
 .yellow.light {
     background: #f1c40f;
+    transform: scale(1.03);
 }
 
 .btn {
