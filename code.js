@@ -25,16 +25,16 @@ class Game {
         this.RemoveEventClick = this.RemoveEventClick.bind(this);
         this.toggleBtnStart();
         this.level = 1
-        
+
     }
 
-    toggleBtnStart(){
-        if(btnStart.classList.contains('hide')){
+    toggleBtnStart() {
+        if (btnStart.classList.contains('hide')) {
             btnStart.classList.remove('hide');
         }
-        else{
+        else {
             btnStart.classList.add('hide');
-            
+
         }
     }
     SequenceGenerator() {
@@ -117,12 +117,12 @@ class Game {
                 else {
                     setTimeout(this.nextLevel, 1500);
                 }
-            } 
+            }
         }
         else {
             this.LoseGame();
         }
-       
+
     }
     WinGame() {
         swal('¡Felicidades!', 'Ganaste el juego', 'success')
